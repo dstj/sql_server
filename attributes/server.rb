@@ -26,6 +26,8 @@ default['sql_server']['instance_dir']   = 'C:\Program Files\Microsoft SQL Server
 
 default['sql_server']['feature_list'] = 'SQLENGINE,REPLICATION,SNAC_SDK'
 
+default['sql_server']['sql_admin_accounts'] = 'Administrator'
+
 if kernel['machine'] =~ /x86_64/
 
   default['sql_server']['server']['url']          = 'http://download.microsoft.com/download/D/1/8/D1869DEC-2638-4854-81B7-0F37455F35EA/SQLEXPR_x64_ENU.exe'
